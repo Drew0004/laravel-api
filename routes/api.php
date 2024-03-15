@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 // Controller progetto API
 use App\Http\Controllers\Api\ProjectController;
+use App\Http\Controllers\Api\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,5 +30,8 @@ Route::name('api.')->group(function() {
     Route::resource('projects', ProjectController::class)->only([
         'index',
         'show'
+    ]);
+    Route::resource('/contacts', ContactController::class)->only([
+        'store',
     ]);
 });
