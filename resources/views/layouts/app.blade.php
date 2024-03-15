@@ -38,6 +38,9 @@
                             <li class="nav-item ms-5">
                                 <a class="nav-link" href="{{ route('admin.technologies.index') }}">Tutte le tecnologie</a>
                             </li>
+                            <li class="nav-item ms-5">
+                                <a class="nav-link" href="{{ route('admin.contacts.index') }}">Tutti i contatti</a>
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('admin.technologies.create') }}">Crea una nuova tecnologia</a>
                             </li>
