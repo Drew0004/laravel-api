@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('page-title', $technology->title)
+@section('page-title', $contact->firstname.' '. $contact->lastname)
 
 @section('main-content')
     <div class="row">
@@ -19,17 +19,21 @@
                     <thead>
                         <tr>
                             <th scope="col">#</th>
-                            <th scope="col">Title</th>
-                            <th scope="col">Slug</th>
+                            <th scope="col">First Name</th>
+                            <th scope="col">Last Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Message</th>
                             <th scope="col">Created at</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row">{{ $technology->id }}</th>
-                            <td>{{ $technology->title }}</td>
-                            <td>{{ $technology->slug }}</td>
-                            <td>{{ $technology->created_at }}</td>
+                            <th scope="row">{{ $contact->id }}</th>
+                            <td>{{ $contact->firstname }}</td>
+                            <td>{{ $contact->lastname }}</td>
+                            <td>{{ $contact->email }}</td>
+                            <td>{{ $contact->message }}</td>
+                            <td>{{ $contact->created_at }}</td>
                         </tr>
                     </tbody>
                 </table>
