@@ -57,7 +57,7 @@
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="offcanvas-body">
-                                        <p>Vuoi davvero eliminare <h5 class=" d-inline-block ">{{ $contact->firstname }}</h5> ?</p>
+                                        <p>Vuoi davvero eliminare <h5 class=" d-inline-block ">{{ $contact->firstname }} {{ $contact->lastname }}</h5> ?</p>
                                         <form class="mt-5" id="deleteForm{{ $contact->id }}"
                                             action="{{ route('admin.contacts.destroy', ['contact' => $contact->id]) }}" method="POST">
                                             @csrf
